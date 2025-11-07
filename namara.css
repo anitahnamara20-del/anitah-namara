@@ -1,23 +1,73 @@
+
 body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 10;
         }
 
         
         .container {
-            background-color: rgb(71, 241, 113);
+            background-color: hwb(215 86% 2% / 0.953);
             width: 90%;
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            border: black solid 2px;
+            border: rgb(176, 180, 244) solid 5px;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+ section {
+            background-color: rgba(237, 239, 242, 0.919);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(248, 248, 248, 0.92);
         }
 
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: rgb(244, 243, 248);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+
+
+        header {
+            background-color: #b9d8f8;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
         
         .profile-header {
             text-align: center;
-            color: #003366;
+            color: black;
         }
 
         
@@ -41,6 +91,8 @@ body {
             height: 100%;
             object-fit: cover;
              border-radius: 70px;
+             border: #0044ff;
+            
         }
 
         .profile-links {
@@ -58,6 +110,7 @@ body {
             text-align: center;
             color: #7300f7;
         }
+        
 
         
         .schools-grid, .work-experience {
@@ -68,13 +121,20 @@ body {
         }
 
         .school-item, .work-item {
-            background-color: #f0f5ff;
+            background-color: #b9d8f8;
             padding: 10px;
             border-radius: 25px;
         }
 
        
 
+        footer {
+            background-color: #b9d8f8;
+            color: oklab(12.856000000000002% 0 -0.00001 / 0.938);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
         
         @media (max-width: 600px) {
             .profile-info {
